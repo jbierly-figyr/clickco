@@ -39,7 +39,7 @@ import {
 } from '@heroicons/react/outline';
 import { ExternalLinkIcon } from '@heroicons/react/solid';
 
-import IntroVideo from '../../app/videos/ocean.mp4';
+import IntroVideo from '../../app/videos/city.mp4';
 import Logo from '../../app/images/logo.png';
 import LogoWhite from '../../app/images/logo-white.png';
 
