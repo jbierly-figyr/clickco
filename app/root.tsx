@@ -1,12 +1,16 @@
 import type { MetaFunction } from '@remix-run/node';
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
+  useCatch,
+  useLocation,
 } from '@remix-run/react';
+import { Navbar } from './components/navbar';
 import kumbhSans400 from '../fonts/kumbh-sans-all-400-normal.woff';
 import kumbhSans700 from '../fonts/kumbh-sans-all-700-normal.woff';
 import styles from '../app/tailwind.css';
@@ -21,8 +25,7 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width,initial-scale=1',
 });
 
-export default function App() {
-  const fontFaceDeclaration = `
+const fontFaceDeclaration = `
   @font-face {
     font-family: "Kumbh-Sans";
     src: url(${kumbhSans400}) format('woff');
@@ -34,6 +37,8 @@ export default function App() {
     font-weight: 700;
   }
 `;
+
+export default function App() {
   return (
     <html lang="en">
       <head>
@@ -46,11 +51,78 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <div className="bg-white font-kumbh-sans">
+          <div className="relative overflow-hidden">
+            <Navbar />
+            <Outlet />
+          </div>
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
       </body>
     </html>
   );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+  const location = useLocation();
+  console.error('CatchBoundary', caught);
+  if (caught.status === 404) {
+    return (
+      <html lang="en">
+        <head>
+          <Meta />
+          <style
+            dangerouslySetInnerHTML={{
+              __html: fontFaceDeclaration,
+            }}
+          />
+          <title>Sorry, No Bueno!</title>
+          <Links />
+        </head>
+        <body>
+          <div className="bg-white font-kumbh-sans">
+            <div className="relative overflow-hidden">
+              <Navbar />
+              <div className="flex items-center justify-center">
+                <div className="flex-1 max-w-7xl mx-auto px-4 sm:px-6">
+                  <div className="text-center">
+                    <h1 className="mt-60 text-3xl leading-9 font-extrabold text-gray-900">
+                      404 - Page Not Found
+                    </h1>
+                    <p className="text-gray-500">
+                      The page you are looking for does not exist.
+                    </p>
+                    <div className="mt-8">
+                      <Link
+                        to={location.pathname}
+                        className="text-indigo-600 hover:text-indigo-900"
+                      >
+                        {' '}
+                        Go back to the previous page{' '}
+                      </Link>{' '}
+                      or{' '}
+                      <Link
+                        to="/"
+                        className="text-indigo-600 hover:text-indigo-900"
+                      >
+                        {' '}
+                        go back to the homepage{' '}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </body>
+      </html>
+    );
+  }
+  throw new Error(`Unhandled error: ${caught.status}`);
 }
