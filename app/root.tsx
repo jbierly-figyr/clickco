@@ -11,6 +11,7 @@ import {
   useLocation,
 } from '@remix-run/react';
 import { Navbar } from './components/navbar';
+import { Footer } from './components/footer';
 import kumbhSans400 from '../fonts/kumbh-sans-all-400-normal.woff';
 import kumbhSans700 from '../fonts/kumbh-sans-all-700-normal.woff';
 import styles from '../app/tailwind.css';
@@ -55,6 +56,7 @@ export default function App() {
           <div className="relative overflow-hidden">
             <Navbar />
             <Outlet />
+            <Footer />
           </div>
         </div>
         <ScrollRestoration />
@@ -88,8 +90,8 @@ export function CatchBoundary() {
               <Navbar />
               <div className="flex items-center justify-center">
                 <div className="flex-1 max-w-7xl mx-auto px-4 sm:px-6">
-                  <div className="text-center">
-                    <h1 className="mt-60 text-3xl leading-9 font-extrabold text-gray-900">
+                  <div className="text-center my-24">
+                    <h1 className="text-3xl leading-9 font-bold text-gray-900">
                       404 - Page Not Found
                     </h1>
                     <p className="text-gray-500">
@@ -115,6 +117,7 @@ export function CatchBoundary() {
                   </div>
                 </div>
               </div>
+              <Footer />
             </div>
           </div>
           <ScrollRestoration />
