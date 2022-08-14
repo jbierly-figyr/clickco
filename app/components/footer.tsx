@@ -1,3 +1,4 @@
+import Logo from '../../app/images/logo.png';
 const footerNavigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -98,8 +99,8 @@ function Footer() {
           <div className="space-y-8 xl:col-span-1">
             <img
               className="h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
-              alt="Company name"
+              src={Logo}
+              alt="Clickco Marketing"
             />
             <p className="text-gray-500 text-base">
               Making the world a better place through constructing
