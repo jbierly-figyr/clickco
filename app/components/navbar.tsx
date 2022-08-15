@@ -15,7 +15,7 @@ const navigation = [
 function Navbar() {
   return (
     <Popover as="header" className="relative">
-      <div className="bg-clickco-blue py-6">
+      <div className="bg-clickco-blue-500 py-6">
         <nav
           className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
           aria-label="Global"
@@ -31,7 +31,7 @@ function Navbar() {
                 />
               </Link>
               <div className="-mr-2 flex items-center md:hidden">
-                <Popover.Button className="bg-clickco-blue rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
+                <Popover.Button className="bg-clickco-blue-500 rounded-md p-2 inline-flex items-center justify-center text-clickco-gray-400 hover:bg-clickco-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -42,7 +42,7 @@ function Navbar() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="text-base font-bold text-white hover:text-teal-200"
+                  className="text-base font-bold text-white hover:text-clickco-turquoise-400"
                 >
                   {item.name}
                 </Link>
@@ -52,7 +52,7 @@ function Navbar() {
           <div className="hidden md:flex md:items-center md:space-x-6">
             <Link
               to="/consultation"
-              className="inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-white bg-teal-600 hover:bg-teal-700"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-white bg-clickco-turquoise-600 hover:bg-clickco-turquoise-700"
             >
               Free Consultation
             </Link>
@@ -79,7 +79,7 @@ function Navbar() {
                 <img className="h-8 w-auto" src={Logo} alt="" />
               </div>
               <div className="-mr-2">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600">
+                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-clickco-gray-400 hover:bg-clickco-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-clickco-turquoise-600">
                   <span className="sr-only">Close menu</span>
                   <XIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -91,7 +91,7 @@ function Navbar() {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-clickco-blue hover:bg-gray-50"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-clickco-blue-500 hover:bg-clickco-gray-50"
                   >
                     {item.name}
                   </Link>
@@ -100,7 +100,7 @@ function Navbar() {
               <div className="mt-6 px-5">
                 <Link
                   to="#"
-                  className="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700"
+                  className="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-clickco-turquoise-500 to-clickco-turquoise-600 text-white font-medium hover:from-clickco-turquoise-600 hover:to-clickco-turquoise-700"
                 >
                   Free Consultation
                 </Link>

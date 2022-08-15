@@ -55,7 +55,7 @@ export default function About() {
             alt=""
           />
           <div
-            className="absolute inset-0  bg-clickco-turquoise mix-blend-multiply"
+            className="absolute inset-0  bg-clickco-turquoise-500 mix-blend-multiply"
             aria-hidden="true"
           />
         </div>
@@ -63,7 +63,7 @@ export default function About() {
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             About
           </h1>
-          <p className="mt-6 text-xl text-teal-100 max-w-3xl">
+          <p className="mt-6 text-xl text-clickco-turquoise-100 max-w-3xl">
             Mattis amet hendrerit dolor, quisque lorem pharetra.
             Pellentesque lacus nisi urna, arcu sociis eu. Orci vel
             lectus nisl eget eget ut consectetur. Sit justo viverra
@@ -74,13 +74,13 @@ export default function About() {
       <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+            <h2 className="text-base text-clickco-turquoise-600 font-semibold tracking-wide uppercase">
               Transactions
             </h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-clickco-gray-900 sm:text-4xl">
               A better way to send money
             </p>
-            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            <p className="mt-4 max-w-2xl text-xl text-clickco-gray-500 lg:mx-auto">
               Lorem ipsum dolor sit amet consect adipisicing elit.
               Possimus magnam voluptatum cupiditate veritatis in
               accusamus quisquam.
@@ -92,17 +92,17 @@ export default function About() {
               {features.map((feature) => (
                 <div key={feature.name} className="relative">
                   <dt>
-                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-clickco-turquoise-500 text-white">
                       <feature.icon
                         className="h-6 w-6"
                         aria-hidden="true"
                       />
                     </div>
-                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
+                    <p className="ml-16 text-lg leading-6 font-medium text-clickco-gray-900">
                       {feature.name}
                     </p>
                   </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-500">
+                  <dd className="mt-2 ml-16 text-base text-clickco-gray-500">
                     {feature.description}
                   </dd>
                 </div>
@@ -111,7 +111,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">
+      <div className="pb-16 bg-gradient-to-r from-clickco-turquoise-500 to-clickco-turquoise-600 lg:pb-0 lg:z-10 lg:relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
           <div className="relative lg:-my-8">
             <div
@@ -151,7 +151,7 @@ export default function About() {
                   <p className="text-base font-medium text-white">
                     Judith Black
                   </p>
-                  <p className="text-base font-medium text-cyan-100">
+                  <p className="text-base font-medium text-clickco-turquoise-100">
                     CEO at PureInsights
                   </p>
                 </footer>

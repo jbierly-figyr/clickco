@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="relative bg-clickco-turquoise">
+    <div className="relative bg-clickco-turquoise-500">
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover"
@@ -8,7 +8,7 @@ export default function Contact() {
           alt=""
         />
         <div
-          className="absolute inset-0  bg-clickco-turquoise mix-blend-multiply"
+          className="absolute inset-0  bg-clickco-turquoise-500 mix-blend-multiply"
           aria-hidden="true"
         />
       </div>
@@ -16,7 +16,7 @@ export default function Contact() {
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
           Contact
         </h1>
-        <p className="mt-6 text-xl text-teal-100 max-w-3xl">
+        <p className="mt-6 text-xl text-clickco-turquoise-100 max-w-3xl">
           Mattis amet hendrerit dolor, quisque lorem pharetra.
           Pellentesque lacus nisi urna, arcu sociis eu. Orci vel
           lectus nisl eget eget ut consectetur. Sit justo viverra non

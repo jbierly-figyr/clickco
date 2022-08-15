@@ -112,12 +112,12 @@ export default function Index() {
   return (
     <>
       <main>
-        <div className="pt-10 bg-clickco-blue sm:pt-16 lg:pt-8 lg:pb-14 overflow-hidden relative font-kumbh-sans">
-          <div className="absolute z-20 from-clickco-blue bg-gradient-to-b w-auto min-w-full min-h-full max-w-none">
+        <div className="pt-10 bg-clickco-blue-500 sm:pt-16 lg:pt-8 lg:pb-14 overflow-hidden relative font-kumbh-sans">
+          <div className="absolute z-20 from-clickco-blue-500 bg-gradient-to-b w-auto min-w-full min-h-full max-w-none">
             <div className="max-w-7xl mx-auto px-4">
               <h1 className="mt-4 text-4xl tracking-tight font-bold uppercase text-white sm:mt-8 sm:text-6xl lg:mt-20 xl:text-7xl">
                 <span className="block">Lorem Ipsum</span>
-                <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
+                <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-clickco-turquoise-400 to-clickco-turquoise-700 sm:pb-5">
                   Dolor Sit Amet.
                 </span>
               </h1>
@@ -136,16 +136,16 @@ export default function Index() {
         </div>
 
         {/* Feature section with screenshot */}
-        <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32">
+        <div className="relative bg-clickco-gray-50 pt-16 sm:pt-24 lg:pt-32">
           <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
             <div>
-              <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
+              <h2 className="text-base font-semibold tracking-wider text-clickco-turquoise-600 uppercase">
                 Lorem Ipsum
               </h2>
-              <p className="mt-2 text-3xl font-extrabold text-clickco-blue tracking-tight sm:text-4xl">
+              <p className="mt-2 text-3xl font-extrabold text-clickco-blue-500 tracking-tight sm:text-4xl">
                 Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet.
               </p>
-              <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+              <p className="mt-5 max-w-prose mx-auto text-xl text-clickco-gray-500">
                 Phasellus lorem quam molestie id quisque diam aenean
                 nulla in. Accumsan in quis quis nunc, ullamcorper
                 malesuada. Eleifend condimentum id viverra nulla.
@@ -164,13 +164,13 @@ export default function Index() {
         {/* Feature section with grid */}
         <div className="relative bg-white py-16 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-            <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
+            <h2 className="text-base font-semibold tracking-wider text-clickco-turquoise-600 uppercase">
               Deploy faster
             </h2>
-            <p className="mt-2 text-3xl font-extrabold text-clickco-blue tracking-tight sm:text-4xl">
+            <p className="mt-2 text-3xl font-extrabold text-clickco-blue-500 tracking-tight sm:text-4xl">
               Everything you need to deploy your app
             </p>
-            <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+            <p className="mt-5 max-w-prose mx-auto text-xl text-clickco-gray-500">
               Phasellus lorem quam molestie id quisque diam aenean
               nulla in. Accumsan in quis quis nunc, ullamcorper
               malesuada. Eleifend condimentum id viverra nulla.
@@ -179,20 +179,20 @@ export default function Index() {
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {features.map((feature) => (
                   <div key={feature.name} className="pt-6">
-                    <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                    <div className="flow-root bg-clickco-gray-50 rounded-lg px-6 pb-8">
                       <div className="-mt-6">
                         <div>
-                          <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                          <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-clickco-turquoise-500 to-clickco-turquoise-600 rounded-md shadow-lg">
                             <feature.icon
                               className="h-6 w-6 text-white"
                               aria-hidden="true"
                             />
                           </span>
                         </div>
-                        <h3 className="mt-8 text-lg font-medium text-clickco-blue tracking-tight">
+                        <h3 className="mt-8 text-lg font-medium text-clickco-blue-500 tracking-tight">
                           {feature.name}
                         </h3>
-                        <p className="mt-5 text-base text-gray-500">
+                        <p className="mt-5 text-base text-clickco-gray-500">
                           {feature.description}
                         </p>
                       </div>
@@ -205,7 +205,7 @@ export default function Index() {
         </div>
 
         {/* Testimonial section */}
-        <div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">
+        <div className="pb-16 bg-gradient-to-r from-clickco-turquoise-500 to-clickco-turquoise-600 lg:pb-0 lg:z-10 lg:relative">
           <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
             <div className="relative lg:-my-8">
               <div
@@ -245,7 +245,7 @@ export default function Index() {
                     <p className="text-base font-medium text-white">
                       Judith Black
                     </p>
-                    <p className="text-base font-medium text-cyan-100">
+                    <p className="text-base font-medium text-clickco-turquoise-100">
                       CEO at PureInsights
                     </p>
                   </footer>
@@ -256,16 +256,16 @@ export default function Index() {
         </div>
 
         {/* Blog section */}
-        <div className="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
+        <div className="relative bg-clickco-gray-50 py-16 sm:py-24 lg:py-32">
           <div className="relative">
             <div className="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-              <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
+              <h2 className="text-base font-semibold tracking-wider text-clickco-turquoise-600 uppercase">
                 Learn
               </h2>
-              <p className="mt-2 text-3xl font-extrabold text-clickco-blue tracking-tight sm:text-4xl">
+              <p className="mt-2 text-3xl font-extrabold text-clickco-blue-500 tracking-tight sm:text-4xl">
                 Helpful Resources
               </p>
-              <p className="mt-5 mx-auto max-w-prose text-xl text-gray-500">
+              <p className="mt-5 mx-auto max-w-prose text-xl text-clickco-gray-500">
                 Phasellus lorem quam molestie id quisque diam aenean
                 nulla in. Accumsan in quis quis nunc, ullamcorper
                 malesuada. Eleifend condimentum id viverra nulla.
@@ -286,7 +286,7 @@ export default function Index() {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-cyan-600">
+                      <p className="text-sm font-medium text-clickco-turquoise-600">
                         <a
                           href={post.category.href}
                           className="hover:underline"
@@ -295,10 +295,10 @@ export default function Index() {
                         </a>
                       </p>
                       <a href={post.href} className="block mt-2">
-                        <p className="text-xl font-semibold text-clickco-blue">
+                        <p className="text-xl font-semibold text-clickco-blue-500">
                           {post.title}
                         </p>
-                        <p className="mt-3 text-base text-gray-500">
+                        <p className="mt-3 text-base text-clickco-gray-500">
                           {post.preview}
                         </p>
                       </a>
@@ -314,7 +314,7 @@ export default function Index() {
                         </a>
                       </div>
                       <div className="ml-3">
-                        <p className="text-sm font-medium text-clickco-blue">
+                        <p className="text-sm font-medium text-clickco-blue-500">
                           <a
                             href={post.author.href}
                             className="hover:underline"
@@ -322,7 +322,7 @@ export default function Index() {
                             {post.author.name}
                           </a>
                         </p>
-                        <div className="flex space-x-1 text-sm text-gray-500">
+                        <div className="flex space-x-1 text-sm text-clickco-gray-500">
                           <time dateTime={post.datetime}>
                             {post.date}
                           </time>
@@ -339,7 +339,7 @@ export default function Index() {
         </div>
 
         {/* CTA Section */}
-        <div className="relative bg-clickco-blue">
+        <div className="relative bg-clickco-blue-500">
           <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
             <img
               className="w-full h-full object-cover"
@@ -348,18 +348,18 @@ export default function Index() {
             />
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply"
+              className="absolute inset-0 bg-gradient-to-r from-clickco-turquoise-400 to-clickco-turquoise-700 mix-blend-multiply"
             />
           </div>
           <div className="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
             <div className="md:ml-auto md:w-1/2 md:pl-10">
-              <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">
+              <h2 className="text-base font-semibold uppercase tracking-wider text-clickco-gray-300">
                 Award winning support
               </h2>
               <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
                 We’re here to help
               </p>
-              <p className="mt-3 text-lg text-gray-300">
+              <p className="mt-3 text-lg text-clickco-gray-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Et, egestas tempus tellus etiam sed. Quam a
                 scelerisque amet ullamcorper eu enim et fermentum,
@@ -370,11 +370,11 @@ export default function Index() {
                 <div className="inline-flex rounded-md shadow">
                   <a
                     href="#"
-                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-clickco-blue bg-white hover:bg-gray-50"
+                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-clickco-blue-500 bg-white hover:bg-clickco-gray-50"
                   >
                     Visit the help center
                     <ExternalLinkIcon
-                      className="-mr-1 ml-3 h-5 w-5 text-gray-400"
+                      className="-mr-1 ml-3 h-5 w-5 text-clickco-gray-400"
                       aria-hidden="true"
                     />
                   </a>
