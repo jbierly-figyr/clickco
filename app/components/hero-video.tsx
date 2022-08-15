@@ -15,7 +15,7 @@ function HeroVideo({ video, title, subtitle }) {
         autoPlay
         loop
         muted
-        className="absolute z-10 w-auto min-w-full min-h-full max-w-none opacity-20 aspect-video min-w-none"
+        className="absolute z-10 w-auto min-w-full min-h-full max-w-none opacity-50 aspect-video min-w-none"
       >
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.

@@ -22,7 +22,8 @@ export const links: LinksFunction = () => [
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title:
+    'ClickCo - A Pay Per Click and Search Engine Marketing Company',
   viewport: 'width=device-width,initial-scale=1',
 });
 

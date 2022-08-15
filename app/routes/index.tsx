@@ -115,8 +115,8 @@ export default function Index() {
         <div>
           <HeroVideo
             video="/assets/videos/city.mp4"
-            title="Title"
-            subtitle="SubTitle"
+            title="Here is a Title"
+            subtitle="A Subtitle goes here"
           />
           {/* Logo cloud */}
           <div className="bg-white">
