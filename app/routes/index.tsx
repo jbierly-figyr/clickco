@@ -8,7 +8,7 @@ import {
 } from '@heroicons/react/outline';
 import { ExternalLinkIcon } from '@heroicons/react/solid';
 
-import IntroVideo from '../../app/videos/city.mp4';
+import { HeroVideo } from '../../app/components/hero-video';
 
 const features = [
   {
@@ -112,27 +112,57 @@ export default function Index() {
   return (
     <>
       <main>
-        <div className="pt-10 bg-clickco-blue-500 sm:pt-16 lg:pt-8 lg:pb-14 overflow-hidden relative font-kumbh-sans">
-          <div className="absolute z-20 from-clickco-blue-500 bg-gradient-to-b w-auto min-w-full min-h-full max-w-none">
-            <div className="max-w-7xl mx-auto px-4">
-              <h1 className="mt-4 text-4xl tracking-tight font-bold uppercase text-white sm:mt-8 sm:text-6xl lg:mt-20 xl:text-7xl">
-                <span className="block">Lorem Ipsum</span>
-                <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-clickco-turquoise-400 to-clickco-turquoise-700 sm:pb-5">
-                  Dolor Sit Amet.
-                </span>
-              </h1>
+        <div>
+          <HeroVideo
+            video="/assets/videos/city.mp4"
+            title="Title"
+            subtitle="SubTitle"
+          />
+          {/* Logo cloud */}
+          <div className="bg-white">
+            <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+              <p className="text-center text-base font-semibold text-clickco-gray-500">
+                Trusted by over 5 very average small businesses
+              </p>
+              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                  <img
+                    className="h-12"
+                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                    alt="Tuple"
+                  />
+                </div>
+                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                  <img
+                    className="h-12"
+                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+                    alt="Mirage"
+                  />
+                </div>
+                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                  <img
+                    className="h-12"
+                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                    alt="StaticKit"
+                  />
+                </div>
+                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+                  <img
+                    className="h-12"
+                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+                    alt="Transistor"
+                  />
+                </div>
+                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
+                  <img
+                    className="h-12"
+                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                    alt="Workcation"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <video
-            autoPlay
-            loop
-            muted
-            className="absolute z-10 w-auto min-w-full min-h-full max-w-none opacity-20 aspect-video min-w-none"
-          >
-            <source src={IntroVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="mx-auto aspect-video max-w-7xl lg:px-8 md:aspect-[3/1]"></div>
         </div>
 
         {/* Feature section with screenshot */}
@@ -340,7 +370,7 @@ export default function Index() {
 
         {/* CTA Section */}
         <div className="relative bg-clickco-blue-500">
-          <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+          <div className="relative h-56 bg-clickco-turquoise-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
             <img
               className="w-full h-full object-cover"
               src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"

@@ -105,7 +105,7 @@ function Footer() {
               src={Logo}
               alt="Clickco Marketing"
             />
-            <p className="text-clickco-gray-500 text-base">
+            <p className="text-clickco-gray-600 text-base">
               Making the world a better place through constructing
               elegant hierarchies.
             </p>
@@ -114,7 +114,7 @@ function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-clickco-gray-400 hover:text-clickco-gray-600"
+                  className="text-clickco-gray-500 hover:text-clickco-gray-700"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -125,7 +125,7 @@ function Footer() {
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-clickco-gray-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-clickco-gray-600 tracking-wider uppercase">
                   Solutions
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -133,7 +133,7 @@ function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-clickco-gray-600 hover:text-clickco-blue"
+                        className="text-base text-clickco-gray-700 hover:text-clickco-blue"
                       >
                         {item.name}
                       </a>
@@ -142,7 +142,7 @@ function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-clickco-gray-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-clickco-gray-600 tracking-wider uppercase">
                   Support
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -150,7 +150,7 @@ function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-clickco-gray-600 hover:text-clickco-blue"
+                        className="text-base text-clickco-gray-700 hover:text-clickco-blue"
                       >
                         {item.name}
                       </a>
@@ -161,7 +161,7 @@ function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-clickco-gray-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-clickco-gray-600 tracking-wider uppercase">
                   Company
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -169,7 +169,7 @@ function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-clickco-gray-600 hover:text-clickco-blue"
+                        className="text-base text-clickco-gray-700 hover:text-clickco-blue"
                       >
                         {item.name}
                       </a>
@@ -178,7 +178,7 @@ function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-clickco-gray-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-clickco-gray-600 tracking-wider uppercase">
                   Legal
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -186,7 +186,7 @@ function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-clickco-gray-600 hover:text-clickco-blue"
+                        className="text-base text-clickco-gray-700 hover:text-clickco-blue"
                       >
                         {item.name}
                       </a>
@@ -197,8 +197,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-clickco-gray-300 py-8">
-          <p className="text-base text-clickco-gray-500 xl:text-center">
+        <div className="mt-12 border-t border-clickco-gray-400 py-8">
+          <p className="text-base text-clickco-gray-600 xl:text-center">
             &copy; 2022 ClickCo, LLC. All rights reserved.
           </p>
         </div>
