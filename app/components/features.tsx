@@ -1,4 +1,4 @@
-function Features({ features }) {
+function Features({ features }: any) {
   return (
     <>
       {/* Feature section with grid */}
