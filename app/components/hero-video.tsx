@@ -1,4 +1,10 @@
-function HeroVideo({ video, title, subtitle }) {
+export interface HeroVideoProps {
+  video: string;
+  title: string;
+  subtitle: string;
+}
+
+function HeroVideo({ video, title, subtitle }: HeroVideoProps) {
   return (
     <div className="pt-10 bg-clickco-blue-500 sm:pt-16 lg:pt-8 lg:pb-14 overflow-hidden relative font-kumbh-sans">
       <div className="absolute z-20 from-clickco-blue-500 bg-gradient-to-b w-auto min-w-full min-h-full max-w-none">

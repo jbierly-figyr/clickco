@@ -1,51 +1,45 @@
-import {
-  CloudUploadIcon,
-  CogIcon,
-  LockClosedIcon,
-  RefreshIcon,
-  ServerIcon,
-  ShieldCheckIcon,
-} from '@heroicons/react/outline';
+import * as OutlineIcons from '@heroicons/react/outline';
 import { ExternalLinkIcon } from '@heroicons/react/solid';
 
 import { HeroVideo } from '../../app/components/hero-video';
+import { Features } from '../../app/components/features';
 
 const features = [
   {
     name: 'Push to Deploy',
     description:
       'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.',
-    icon: CloudUploadIcon,
+    icon: OutlineIcons.LockClosedIcon,
   },
   {
     name: 'SSL Certificates',
     description:
       'Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.',
-    icon: LockClosedIcon,
+    icon: OutlineIcons.LockClosedIcon,
   },
   {
     name: 'Simple Queues',
     description:
       'Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.',
-    icon: RefreshIcon,
+    icon: OutlineIcons.LockClosedIcon,
   },
   {
     name: 'Advanced Security',
     description:
       'Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.',
-    icon: ShieldCheckIcon,
+    icon: OutlineIcons.LockClosedIcon,
   },
   {
     name: 'Powerful API',
     description:
       'Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.',
-    icon: CogIcon,
+    icon: OutlineIcons.CogIcon,
   },
   {
     name: 'Database Backups',
     description:
       'Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.',
-    icon: ServerIcon,
+    icon: OutlineIcons.ServerIcon,
   },
 ];
 const blogPosts = [
@@ -112,54 +106,52 @@ export default function Index() {
   return (
     <>
       <main>
-        <div>
-          <HeroVideo
-            video="/assets/videos/city.mp4"
-            title="Here is a Title"
-            subtitle="A Subtitle goes here"
-          />
-          {/* Logo cloud */}
-          <div className="bg-white">
-            <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-base font-semibold text-clickco-gray-500">
-                Trusted by over 5 very average small businesses
-              </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                    alt="Tuple"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                    alt="Mirage"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                    alt="Transistor"
-                  />
-                </div>
-                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                    alt="Workcation"
-                  />
-                </div>
+        <HeroVideo
+          video="/assets/videos/city.mp4"
+          title="Lorem Ipsum"
+          subtitle="Dolor Sit Amet"
+        />
+        {/* Logo cloud */}
+        <div className="bg-white">
+          <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <p className="text-center text-base font-semibold text-clickco-gray-500">
+              Trusted by over 5 very average small businesses
+            </p>
+            <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <img
+                  className="h-12"
+                  src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                  alt="Tuple"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <img
+                  className="h-12"
+                  src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+                  alt="Mirage"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <img
+                  className="h-12"
+                  src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                  alt="StaticKit"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+                <img
+                  className="h-12"
+                  src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+                  alt="Transistor"
+                />
+              </div>
+              <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
+                <img
+                  className="h-12"
+                  src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                  alt="Workcation"
+                />
               </div>
             </div>
           </div>
@@ -191,48 +183,7 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Feature section with grid */}
-        <div className="relative bg-white py-16 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-            <h2 className="text-base font-semibold tracking-wider text-clickco-turquoise-600 uppercase">
-              Deploy faster
-            </h2>
-            <p className="mt-2 text-3xl font-extrabold text-clickco-blue-500 tracking-tight sm:text-4xl">
-              Everything you need to deploy your app
-            </p>
-            <p className="mt-5 max-w-prose mx-auto text-xl text-clickco-gray-500">
-              Phasellus lorem quam molestie id quisque diam aenean
-              nulla in. Accumsan in quis quis nunc, ullamcorper
-              malesuada. Eleifend condimentum id viverra nulla.
-            </p>
-            <div className="mt-12">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {features.map((feature) => (
-                  <div key={feature.name} className="pt-6">
-                    <div className="flow-root bg-clickco-gray-50 rounded-lg px-6 pb-8">
-                      <div className="-mt-6">
-                        <div>
-                          <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-clickco-turquoise-500 to-clickco-turquoise-600 rounded-md shadow-lg">
-                            <feature.icon
-                              className="h-6 w-6 text-white"
-                              aria-hidden="true"
-                            />
-                          </span>
-                        </div>
-                        <h3 className="mt-8 text-lg font-medium text-clickco-blue-500 tracking-tight">
-                          {feature.name}
-                        </h3>
-                        <p className="mt-5 text-base text-clickco-gray-500">
-                          {feature.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        <Features features={features} />
 
         {/* Testimonial section */}
         <div className="pb-16 bg-gradient-to-r from-clickco-turquoise-500 to-clickco-turquoise-600 lg:pb-0 lg:z-10 lg:relative">
